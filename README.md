@@ -2,5 +2,5 @@
 Prerequisite: install [ripgrep](https://github.com/BurntSushi/ripgrep).
 
 ```
-git clone https://github.com/Luai-Salah/nvim ~/.config/nvim && nvim
+git clone https://github.com/Lasovar/nvim ~/.config/nvim && nvim
 ```
