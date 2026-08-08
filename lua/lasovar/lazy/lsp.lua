@@ -71,7 +71,6 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "pyright",
-                "gopls",
             },
             handlers = {
                 rust_analyzer = function() end,

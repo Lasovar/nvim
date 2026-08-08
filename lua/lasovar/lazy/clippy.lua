@@ -1,4 +1,4 @@
   return { -- Clippy diagnostics
     'johnsaigle/clippy.nvim',
-    dependencies = { "jose-elias-alvarez/null-ls.nvim" },
+    dependencies = { "nvimtools/none-ls.nvim" },
   }
