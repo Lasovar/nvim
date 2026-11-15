@@ -1,6 +1,7 @@
 require("lasovar.set")
 require("lasovar.remap")
 require("lasovar.lazy_init")
+require("lasovar.daslang")
 
 -- DO.not
 -- DO NOT INCLUDE THIS

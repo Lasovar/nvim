@@ -78,3 +78,25 @@ end)
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+-- EXPERIMENTAL!!
+-- Open a terminal at the bottom with a horizontal split
+vim.keymap.set('n', '<leader>st', ':split term://fish<CR>', { desc = 'Split terminal horizontal' })
+
+-- Open a terminal on the right with a vertical split
+vim.keymap.set('n', '<leader>sv', ':botright vsplit term://fish<CR>', { desc = 'Split terminal vertical' })
+
+-- Quick jump out of terminal mode back to normal mode easily
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+
+-- Move quickly between any splits (files and terminal) using Ctrl + direction keys
+vim.keymap.set('n', '<C-h>', '<C-w>h', { desc = 'Move to left split' })
+vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move to bottom split' })
+vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move to top split' })
+vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move to right split' })
+
+-- Jump from terminal mode directly to other splits without escaping first
+vim.keymap.set('t', '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Move left from terminal' })
+vim.keymap.set('t', '<C-j>', '<C-\\><C-n><C-w>j', { desc = 'Move down from terminal' })
+vim.keymap.set('t', '<C-k>', '<C-\\><C-n><C-w>k', { desc = 'Move up from terminal' })
+vim.keymap.set('t', '<C-l>', '<C-\\><C-n><C-w>l', { desc = 'Move right from terminal' })
